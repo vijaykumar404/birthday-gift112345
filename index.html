@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>birthday-text</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+<!-- LAYER 1 -->
+<div id="layer1" class="layer active">
+    <h1>🎁 Tap to Open 🎁</h1>
+    <h1> 29/03/2026</h1>
+    <button onclick="nextLayer()"> Open </button>
+</div>
+
+<!-- LAYER 2 -->
+<div id="layer2" class="layer">
+    <h1 class="birthday-text">🎉 wish you many more happy returns of the day, my dear bestie ❤️
+You are my biggest support, my happiness, and my safe place.
+I’m lucky to have you in my life 🥺✨❤️ 🎉</h1>
+<h3>Your smile shines like the morning light,
+Stay happy, stay blessed, always bright 🌸</h3>
+    <div class="balloons">
+        <span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span>
+    </div>
+    <button onclick="nextLayer()">Next ➡️</button>
+</div>
+
+<!-- LAYER 3 -->
+<div id="layer3" class="layer">
+    <h2>❤️ Our Memories ❤️</h2>
+    <h1>Happy Birthday!
+Life is better with a friend like you.
+Thank you for always standing by my side ❤️</h1>
+    <div class="gallery">
+        <img src="pic1.jpg">
+        <img src="aaa.jpg">
+        <img src="ddd.jpg">
+        <img src="eee.jpg">
+    </div>
+    <button onclick="nextLayer()">Next ➡️</button>
+</div>
+
+<!-- LAYER 4 -->
+<div id="layer4" class="layer">
+    <h1>💖 Love You Bestie 💖</h1>
+    <button onclick="playMusic()">▶ Play Song</button>
+    <audio id="music" src="sss.mp3"></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

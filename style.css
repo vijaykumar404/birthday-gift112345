@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(135deg, #5d4eff, #fc913a);
+    color: white;
+    background-image: url(aaa.jpg);
+}
+
+/* Layer Styling */
+.layer {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.active {
+    display: flex;
+}
+
+/* Text */
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    background: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Balloons */
+.balloons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.balloons span {
+    font-size: 35px;
+    animation: float 3s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-80px); }
+}
+
+/* Text Animation */
+.birthday-text {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px white; }
+    to { text-shadow: 0 0 20px yellow; }
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/* 📱 Mobile Responsive */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .gallery img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
